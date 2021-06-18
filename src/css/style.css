@@ -21,6 +21,10 @@ nav {
     z-index: 10;
 }
 
+.owl-carousel .owl-item .owl-lazy.loaded{
+    opacity: 1;
+}
+
 .container {
     width: 100%;
     padding: 2rem 3rem;
