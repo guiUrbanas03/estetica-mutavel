@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./lib/owl-carousel-2/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./lib/owl-carousel-2/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="./lib/slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Estética Mutável</title>
 </head>
 <body>
@@ -23,7 +22,7 @@
                         <li><a href="#home">Início</a></li>
                         <li><a href="#project">Projeto</a></li>
                         <li><a href="#about">Sobre</a></li>
-                        <li><a href="#bio">Biografia</a></li>
+                        <li><a href="#bio">Bio</a></li>
                     </ul>
                 </nav>
             </div>
@@ -35,7 +34,7 @@
                         <li><a href="#home">Início</a></li>
                         <li><a href="#project">Projeto</a></li>
                         <li><a href="#about">Sobre</a></li>
-                        <li><a href="#bio">Biografia</a></li>
+                        <li><a href="#bio">Bio</a></li>
                     </ul>
                 </nav>
             </div>
@@ -49,18 +48,27 @@
                 </div>
                 <h1>Estética <br/>Mutável</h1>
                 <div class='arrow'>
-                    <img src="./src/assets/svg/arrow-down-mobile.svg" alt="arrow">
+                    <a href="#project">
+                        <img src="./src/assets/svg/arrow-down-mobile.svg" alt="arrow">
+                    </a>
                 </div>
             </div>
         </div>
         <div class="bg-desktop">
             <div class="bg-desktop-img">
-                <img src="./src/assets/images/bg-desktop.png" alt="bg-image">
+                <img src="./src/assets/images/bg-desktop-2.png" alt="bg-image">
+            </div>
+            <div class="container">
+                <div class='arrow-desktop'>
+                    <a href="#project">
+                        <img src="./src/assets/svg/arrow-down.svg" alt="arrow">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
-    <section id='project' class='lift'>
-        <div class="owl-carousel">
+    <section id='project' class='lift grab'>
+        <div class="carousel-container">
             <img src="./src/assets/images/1.jpeg" alt="img1">
             <img src="./src/assets/images/2.jpeg" alt="img2">
             <img src="./src/assets/images/3.jpeg" alt="img3">
@@ -78,29 +86,99 @@
             <img src="./src/assets/images/13.jpeg" alt="img13">
             <img src="./src/assets/images/14.jpeg" alt="img14">
         </div>
+        <div class="container">
+            <div class='project-info'>
+                <p>Arraste para o lado</p>
+                <img src="./src/assets/svg/arrow-right.svg">
+            </div>
+        </div>
     </section>
     <section id='about'>
-        <div class="container">
-            <h2 class='sub-title'>Fotógrafas</h2>
-        </div>
-        <div class="phot-container">
-            <img src="./src/assets/images/phots.png" alt="">
+        <h2 class='sub-title mb container'>Sobre</h2>
+        <div class="about">
+            <div class="container">
+                <div class='about-content'>
+                    <p class="text-3">
+                        Este Trabalho de Iniciação Científica do curso Superior de Fotografia da Universidade do Vale do Itajaí, tem como objetivo principal a discussão da presença dos corpos não normativos na sociedade atual. Trazendo como base referencial as obras do renascimento que, diferente do que acontecia nas obras, foram construidas no intuito de introduzir corpos reais que muitas vezes são apagados na sociedade.
+                    </p>
+                    <p class='text-3'>Profissionais envolvidos:</p>
+                    <p class="text-3">Professora Orientadora: Sarah Uriarte</p>
+                    <p class="text-3">Banca: Eloah Acauan e Hélia Farias</p>
+                    <p class="text-3">Acadêmicas: Gabriela Probst Pereira e Letícia Mendes Luciano</p>
+                    <p class="text-3">Casting: Aline Georgia Settili, Andressa Marielle Martins, Beatriz Vitória de Souza, Guilherme da Silva Moreno, Laudenice Teresinha Mattana, Luiz Gustavo Gouveia Nazarito, Nestor Varela Junior, Tatiane Natalino Sant'Ana, Vera Lúcia Hausmann e Vitória Dias Bello.</p>
+                    <p class="text-3">Desenvolvedor Web: Guilherme Urbanas Ferreira</p>
+                </div>
+            </div>
         </div>
     </section>
-
     <section id='bio'>
-        <div class="container">
-            <h2 class='sub-title mb'>Agradecimentos</h2>
-            <p class='text'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsam voluptate voluptates sapiente eum, unde rerum veniam praesentium aut rem iusto excepturi. Vel rem perferendis id blanditiis eius, assumenda ratione!
-            </p>
-
-            <p class='text'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus eveniet repellendus, at deleniti enim laboriosam delectus ipsa fugiat inventore. Assumenda.
-            </p>
+        <div class="mobile-bio">
+            <div class="phots-mobile">
+                <div class="container">
+                    <div class="bio-slide">
+                        <div class='slide-item'>
+                            <div class='name-arrow mb'>
+                                <h3 class='sub-title'>Gabriela</h3>
+                                <img src="./src/assets/svg/arrow-right.svg" alt="arrow-right">
+                            </div>
+                            <div class='bio-item'><img src="./src/assets/images/photo-1.png" alt="photo-1"></div>
+                            <p class='text'>
+                                Graduanda do Curso Superior de Tecnologia em Fotografia pela Universidade do Vale do Itajaí (Univali). A artista mantém seu trabalho como autônoma na área de fotografia, especificamente utilizando o nu. Atuou como estagiária na empresa Orange Produções, onde desempenhou o trabalho como assistente de direção de arte e fotografia para o projeto “Betta” (projeto aprovado pela Lei de Incentivo à Cultura de Balneário Camboriú, 2020). Participou de workshops e palestras, dentre as quais, se destacam: Fotografia Fine Art e Produção (curso online), disponibilizada pela fotógrafa Lua Morales (2020) e Retrato & Percepção (mentoria online), disponibilizada pela fotógrafa Cris Santoro (2021). Participou por dois anos consecutivos como fotógrafa na Noite da Poesia do Colégio de Aplicação da Univali (CAU) nos anos de 2018 e 2019. Em 2019, realizou trabalhos em conjunto com a Orquestra Univali (Seção de Música e Coral – Univali), na cobertura fotográfica do Festival de Música de Navegantes, do Opa (Opção de Profissional por Área) e, também, do 15º Festival Cultural Univali. 
+                            </p>
+                        </div>
+                        <div class='slide-item'>
+                            <h3 class='sub-title mb'>Letícia</h3>
+                            <div class='bio-item'><img src="./src/assets/images/photo-2.png" alt="photo-2"></div>
+                            <p class='text'>
+                                Graduanda do curso Superior de Tecnologia em Fotografia da Univali. Atualmente trabalha como sócio-administrativo na empresa Sacolão Elite Ltda e como autônoma na área de fotografia com foco em ensaios fotográficos. Participou das palestras da Semana da Fotografia por 2 anos consecutivos (2019 e 2020), realizado pela Editora Iphoto e acontece todo ano em Balneário Camboriú e é certificada pelo curso Beginner Digital Photography (2020) assinado pelo gerente de desenvolvimento de conteúdo Eric Corbett. Foi fotógrafa oficial do projeto Grande Divas (2019), formado e dirigido por Mel Pezzi e apresentado no Teatro Municipal Bruno Nitz em Balneário Camboriú – SC. Foi auxiliar de fotografia na gravação dos comerciais para campanha da empresa Mendes Empreendimentos (2020).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="desktop-bio">
+            <div class="phots-container">
+                <div class='phots'><img src="./src/assets/images/le_gabi.png" alt="phots"></div>
+                <div>
+                    <h3 class='left-title absolute-title'>Gabriela<br/><span class='phot-info'>Clique para mais informações</span></h3>
+                    <div class="hidden-phot right-phot">
+                        <h3 class='sub-title-2 mb'>Gabriela Probst Pereira</h3>
+                        <p class='text-2'>
+                            Graduanda do Curso Superior de Tecnologia em Fotografia pela Universidade do Vale do Itajaí (Univali). A artista mantém seu trabalho como autônoma na área de fotografia, especificamente utilizando o nu. Atuou como estagiária na empresa Orange Produções, onde desempenhou o trabalho como assistente de direção de arte e fotografia para o projeto “Betta” (projeto aprovado pela Lei de Incentivo à Cultura de Balneário Camboriú, 2020). Participou de workshops e palestras, dentre as quais, se destacam: Fotografia Fine Art e Produção (curso online), disponibilizada pela fotógrafa Lua Morales (2020) e Retrato & Percepção (mentoria online), disponibilizada pela fotógrafa Cris Santoro (2021). Participou por dois anos consecutivos como fotógrafa na Noite da Poesia do Colégio de Aplicação da Univali (CAU) nos anos de 2018 e 2019. Em 2019, realizou trabalhos em conjunto com a Orquestra Univali (Seção de Música e Coral – Univali), na cobertura fotográfica do Festival de Música de Navegantes, do Opa (Opção de Profissional por Área) e, também, do 15º Festival Cultural Univali. 
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class='right-title absolute-title'>Letícia<br/><span class='phot-info'>Clique para mais informações</span></h3>
+                    <div class="hidden-phot left-phot">
+                        <h3 class='sub-title-2 mb'>Letícia Mendes Luciano</h3>
+                        <p class='text-2'>
+                            Graduanda do curso Superior de Tecnologia em Fotografia da Univali. Atualmente trabalha como sócio-administrativo na empresa Sacolão Elite Ltda e como autônoma na área de fotografia com foco em ensaios fotográficos. Participou das palestras da Semana da Fotografia por 2 anos consecutivos (2019 e 2020), realizado pela Editora Iphoto e acontece todo ano em Balneário Camboriú e é certificada pelo curso Beginner Digital Photography (2020) assinado pelo gerente de desenvolvimento de conteúdo Eric Corbett. Foi fotógrafa oficial do projeto Grande Divas (2019), formado e dirigido por Mel Pezzi e apresentado no Teatro Municipal Bruno Nitz em Balneário Camboriú – SC. Foi auxiliar de fotografia na gravação dos comerciais para campanha da empresa Mendes Empreendimentos (2020).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class='logo-uni'>
+        <div>
+            <img src="./src/assets/images/logo-univali.svg" alt="logo-univali">
         </div>
     </section>
     <script src="./lib/jquery/jquery-3.6.0.min.js"></script>
-    <script src="./lib/owl-carousel-2/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="./src/js/index.js"></script>
+    <script src="./src/js/horizontal-scroll.js"></script>
+    <script src="./lib/slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.bio-slide').slick({
+                slidesToShow: 1,
+                dots: false,
+                infinite: false,
+                arrows: false,
+            });
+        });
+    </script>
 </body>
 </html>
