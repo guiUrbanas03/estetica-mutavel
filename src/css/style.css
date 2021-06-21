@@ -14,15 +14,10 @@ html {
 body {
     background-color: #050A0D;
     color: #EEE;
-    scroll-snap-type: y mandatory;
 }
 
 nav {
     z-index: 10;
-}
-
-.snap {
-    scroll-snap-align: start;
 }
 
 .container {
