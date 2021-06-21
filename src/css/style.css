@@ -190,6 +190,7 @@ nav {
 
 .phots {
     width: 100%;
+    
 }
 
 .phots > img {
@@ -258,22 +259,6 @@ nav {
     opacity: 0;
     right: 0;
     bottom: 0;
-}
-
-.project-info {
-    position: absolute;
-    right: 8rem;
-    bottom: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1.2rem;
-}
-
-.project-info img {
-    width: 20px;
-    margin-left: 3rem;
-    animation: move-arrow-right ease 1.5s infinite;
 }
 
 #about {
@@ -381,6 +366,10 @@ nav {
     animation: move-arrow-right ease 1.5s infinite;
 }
 
+.project-info {
+    display: none;
+}
+
 @keyframes move-arrow-right {
     0% {
         transform: translateX(0);
@@ -485,6 +474,22 @@ nav {
         padding: 6rem;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
         border-radius: 10px;
+    }
+
+    .project-info {
+        position: absolute;
+        right: 8rem;
+        bottom: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.2rem;
+    }
+    
+    .project-info img {
+        width: 20px;
+        margin-left: 3rem;
+        animation: move-arrow-right ease 1.5s infinite;
     }
 }
 
