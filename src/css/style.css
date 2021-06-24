@@ -157,6 +157,7 @@ nav {
 
 .bg-desktop {
     display: none;
+    max-height: 100vh;
 }
 
 .bg-desktop-img {
@@ -256,15 +257,36 @@ nav {
     bottom: 0;
 }
 
+.video-bg {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+    .video-bg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video-bg {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .video-bg {
+        display: none;
+    }
+}
+
 #about {
-    min-height: 100vh;
-    background-image: url('../assets/images/bg-2.png');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: overlay;
-    filter: grayscale(0.7);
+    min-height: 100vh;  
     padding: 3rem 0;
 }
 
@@ -312,8 +334,8 @@ nav {
 
 .carousel-container img {
     display: block;
-    object-fit: cover;
     pointer-events: none;
+
 }
 
 .logo-uni {
@@ -431,10 +453,10 @@ nav {
         transform: translateY(-13rem);
     }
 
-    .carousel-container img {
+    /* .carousel-container img {
         width: 100vw !important;
         height: 100vh !important;
-    }
+    } */
 
     .phots > img {
         height: 100vh;
