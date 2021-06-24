@@ -155,27 +155,29 @@ nav {
     animation: move-arrow ease-out 1.5s infinite;
 }
 
+.bg-start {
+    width: 100%;
+    height: 100vh;
+}
+
 .bg-desktop {
     display: none;
-    max-height: 100vh;
+    background-image: url('../assets/images/bg-desktop-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: -6rem;
 }
 
 .bg-desktop-img {
     position: relative;
-    margin-top: 60px;
     width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    word-spacing: 10px;
-    font-size: 4rem;
 }
 
 .bg-desktop-img img {
     width: 100%;
-    height: 100vh;
-    max-width: 100%;
-    object-fit: cover;
 }
 
 .phots-container {
@@ -257,35 +259,8 @@ nav {
     bottom: 0;
 }
 
-.video-bg {
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    object-fit: cover;
-}
-
-
-@media (min-aspect-ratio: 16/9) {
-    .video-bg {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .video-bg {
-        width: auto;
-        height: 100%;
-    }
-}
-
-@media (max-width: 767px) {
-    .video-bg {
-        display: none;
-    }
-}
-
 #about {
+
     min-height: 100vh;  
     padding: 3rem 0;
 }
@@ -387,6 +362,10 @@ nav {
     display: none;
 }
 
+.relative {
+    position: relative;
+}
+
 @keyframes move-arrow-right {
     0% {
         transform: translateX(0);
@@ -425,12 +404,12 @@ nav {
     }
 
     .bg-desktop-img img {
-        transform: translateY(-14rem);
+        /* transform: translateY(-14rem); */
     }
 
-    .lift {
+    /* .lift {
         transform: translateY(-6rem);
-    }
+    } */
 }
 
 @media (min-width: 1024px) {
@@ -450,7 +429,7 @@ nav {
     }
 
     .lift {
-        transform: translateY(-13rem);
+        /* transform: translateY(-13rem); */
     }
 
     /* .carousel-container img {
@@ -507,6 +486,19 @@ nav {
         width: 20px;
         margin-left: 3rem;
         animation: move-arrow-right ease 1.5s infinite;
+    }
+
+    #project {
+        position: relative;
+        margin-bottom: 20rem;
+    }
+
+    #bg-start {
+        margin-bottom: 20rem;
+    }
+    
+    #about {
+        margin-bottom: 20rem;
     }
 }
 
