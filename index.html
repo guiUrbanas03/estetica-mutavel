@@ -100,7 +100,7 @@
                         Esta exposição é resultado do Trabalho de Iniciação Científica do curso Superior de Fotografia da Universidade do Vale do Itajaí, e tem como objetivo principal a discussão da presença dos corpos não normativos na sociedade atual. Trazendo como base referencial as obras do renascimento, propomos, diferente do que acontecia nas obras, construir fotografias com pessoas de corpos reais que muitas vezes são apagados na sociedade.
                     </p>
                     <p class='text-3'>Profissionais envolvidos:</p>
-                    <p class="text-3">Acadêmicas: Gabriela Probst Pereira e Letícia Mendes Luciano</p>
+                    <p class="text-3">Fotógrafas: Gabriela Probst Pereira e Letícia Mendes Luciano</p>
                     <p class="text-3">Professora Orientadora: Sarah Uriarte</p>
                     <p class="text-3">Banca: Hélia Farias e Lucas Correia</p>
                     <p class="text-3">Casting: Aline Georgia Settili, Andressa Marielle Martins, Beatriz Vitória de Souza, Guilherme da Silva Moreno, Laudenice Teresinha Mattana, Luiz Gustavo Gouveia Nazarito, Nestor Varela Junior, Tatiane Natalino Sant'Ana, Vera Lúcia Hausmann e Vitória Dias Bello.</p>
@@ -164,6 +164,23 @@
             <img src="./src/assets/images/logo-univali.svg" alt="logo-univali">
         </div>
     </section>
+
+    <section class='warning-screen'>
+        <div class='warning-content'>
+            <div>
+                <p>
+                    Segundo o Guia Prático de Classificação Indicativa da Secretaria Nacional de Justiça, o conteúdo a seguir
+                    é de classificação livre, pois contém nudez sem qualquer apelo erótico ou sexual.
+                </p>
+            </div>
+            <div class='classification-box'>
+                <span>L</span>
+            </div>
+            <p class='warning-footer'>Contém nudez <br/>não erótica</p>
+            <button id='warning-button' class='warning-button'>Prosseguir</button>
+        </div>
+    </section>
+
     <script src="./lib/jquery/jquery-3.6.0.min.js"></script>
     <script src="./src/js/index.js"></script>
     <script src="./src/js/horizontal-scroll.js"></script>
@@ -176,7 +193,13 @@
                 infinite: false,
                 arrows: false,
             });
+
+            $('#warning-button').click(() => {
+                $('.warning-screen').remove();
+            })
         });
+
+
     </script>
 </body>
 </html>
