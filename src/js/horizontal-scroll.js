@@ -6,10 +6,6 @@ let startDragging = function (e) {
   mouseDown = true;
   startX = e.pageX - slider.offsetLeft;
   scrollLeft = slider.scrollLeft;
-
-  console.log('scrollLeft: ', scrollLeft);
-  console.log('slider.scrollWidth: ', slider.scrollWidth);
-  console.log('slider.clientWidth: ', slider.clientWidth);
 };
 let stopDragging = function (event) {
   mouseDown = false;
